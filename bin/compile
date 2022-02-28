@@ -112,10 +112,10 @@ PATH=$build_dir/vendor/node/bin:$PATH
 cd $build_dir
 
 # Install npm@next
-status "Installing the 'next' version of npm"
-npm install -g npm@latest 2>&1 | indent
-npm_version=$(npm -v)
-status "Using npm version: $npm_version"
+# status "Installing the 'next' version of npm"
+# npm install -g npm 2>&1 | indent
+# npm_version=$(npm -v)
+# status "Using npm version: $npm_version"
 
 # If node_modules directory is checked into source control then
 # rebuild any native deps. Otherwise, restore from the build cache.
